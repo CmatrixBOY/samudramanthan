@@ -39,13 +39,14 @@ export default function Login() {
           <form className="space-y-3" onSubmit={onSubmit}>
             <div>
               <label className="mb-1 block text-sm">Email</label>
-              <Input value={email} onChange={e=>setEmail(e.target.value)} placeholder="you@moes.gov.in" type="email" required />
+              <Input value={email} onChange={e=>setEmail(e.target.value)} placeholder="nexgensentinels@gmail.com" type="email" required />
             </div>
             <div>
               <label className="mb-1 block text-sm">Password</label>
               <Input value={password} onChange={e=>setPassword(e.target.value)} placeholder="••••••••" type="password" required />
             </div>
             {error && <p className="text-sm text-red-600">{error}</p>}
+            <p className="text-xs text-muted-foreground">Demo credentials: nexgensentinels@gmail.com / utsav1234</p>
             <Button type="submit" className="w-full" disabled={loading}>{loading? 'Signing in…':'Sign in'}</Button>
           </form>
         </CardContent>
