@@ -15,7 +15,11 @@ export const AuthProvider = ({ children }) => {
 
   const login = async ({ email, password }) => {
     await new Promise(r => setTimeout(r, 400));
-    if (!email || !password) throw new Error('Invalid credentials');
+    const allowedEmail = 'nexgensentinels@gmail.com';
+    const allowedPass = 'utsav1234';
+    if (email !== allowedEmail || password !== allowedPass) {
+      throw new Error('Invalid credentials');
+    }
     setUser({ email });
     return true;
   };
