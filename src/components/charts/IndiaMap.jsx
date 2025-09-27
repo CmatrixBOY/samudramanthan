@@ -1,10 +1,9 @@
 import ReactFC from 'react-fusioncharts';
 import FusionCharts from 'fusioncharts';
 import Maps from 'fusioncharts/fusioncharts.maps';
-import India from 'fusioncharts/maps/fusioncharts.india';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-ReactFC.fcRoot(FusionCharts, Maps, India, FusionTheme);
+ReactFC.fcRoot(FusionCharts, Maps, FusionTheme);
 
 export default function IndiaMap({ data = [], caption = 'Catch by State' }) {
   const dataSource = {
