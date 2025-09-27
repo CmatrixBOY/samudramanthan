@@ -6,6 +6,11 @@ import Card, { CardHeader, CardTitle } from '../components/ui/card.jsx';
 
 const SPECIES = ['Hilsa', 'Sardine', 'Tuna', 'Mackerel'];
 const REGIONS = ['Bay of Bengal', 'Arabian Sea', 'Indian Ocean'];
+const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const WEATHER = [
+  { key: 'sst', label: 'Sea Surface Temp (SST)' },
+  { key: 'salinity', label: 'Salinity' }
+];
 
 export default function Dashboard() {
   const nav = useNavigate();
