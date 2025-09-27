@@ -21,7 +21,7 @@ export default function FishingRatio() {
     yaxis: [{ title: { text: 'Tonnes' } }, { opposite: true, title: { text: '%' } }],
     dataLabels: { enabled: false },
     plotOptions: { bar: { horizontal: false } },
-    tooltip: { shared: true }
+    tooltip: { shared: true, intersect: false }
   };
 
   const pieSeries = states.states.map(s=>s.catch);
