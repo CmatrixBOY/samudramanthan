@@ -1,0 +1,15 @@
+export default function About() {
+  return (
+    <div className="prose max-w-3xl">
+      <h1>About Samudra Manthan</h1>
+      <p>
+        Samudra Manthan supports Indian marine sustainability for the Ministry of Earth Sciences (MoES). Built by NexGen Sentinels, it unifies fisheries, oceanography and policy insights to assist fishermen, policymakers and researchers.
+      </p>
+      <ul>
+        <li>Fishermen: timely insights on stocks, bans and weather risks.</li>
+        <li>Policymakers: state-wise trends, compliance and sustainability metrics.</li>
+        <li>Researchers: ocean parameters and species patterns across Indian waters.</li>
+      </ul>
+    </div>
+  );
+}

@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "id": "cmfri-seasonal-ban",
+      "title": "Seasonal Fishing Ban (India)",
+      "summary": "Annual monsoon fishing ban varies by coast: 15 Apr–14 Jun (East), 1 Jun–31 Jul (West).",
+      "penalties": "Seizure of gear and fines per state rules.",
+      "keywords": ["seasonal ban", "monsoon", "CMFRI", "IMD"]
+    },
+    {
+      "id": "crz-notification",
+      "title": "Coastal Regulation Zone (CRZ) Notification",
+      "summary": "Regulates activities along India's coastline to protect ecosystems and livelihoods.",
+      "penalties": "Project suspension and environmental compensation.",
+      "keywords": ["CRZ", "coastal", "MoEFCC", "CPCB"]
+    },
+    {
+      "id": "biodiversity-act",
+      "title": "Biological Diversity Act, 2002",
+      "summary": "Conservation and sustainable use of biological resources including marine species.",
+      "penalties": "Fines and imprisonment for contraventions.",
+      "keywords": ["biodiversity", "NBA", "marine"]
+    },
+    {
+      "id": "mpeda-export",
+      "title": "MPEDA Quality Standards",
+      "summary": "Quality norms and traceability for marine product exports.",
+      "keywords": ["MPEDA", "export", "quality"]
+    }
+  ]
+}
