@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur">
       <div className="mx-auto flex h-14 max-w-7xl items-center gap-3 px-4">
-        <NavLink to="/dashboard" className="font-semibold">MoES Marine Insights</NavLink>
+        <NavLink to="/dashboard" className="font-semibold">Samudra Manthan</NavLink>
         <nav className="ml-6 hidden items-center gap-4 text-sm md:flex">
           <NavLink to="/dashboard/fish" className={({isActive})=>`hover:underline ${isActive?'font-semibold':''}`}>Fish Insights</NavLink>
           <NavLink to="/dashboard/oceanography" className={({isActive})=>`hover:underline ${isActive?'font-semibold':''}`}>Oceanography</NavLink>
