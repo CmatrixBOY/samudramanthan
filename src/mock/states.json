@@ -1,0 +1,9 @@
+{
+  "states": [
+    {"state":"Kerala","catch":520,"damageRatio":12},
+    {"state":"Gujarat","catch":680,"damageRatio":9},
+    {"state":"Tamil Nadu","catch":610,"damageRatio":11},
+    {"state":"Andhra Pradesh","catch":590,"damageRatio":10},
+    {"state":"Maharashtra","catch":560,"damageRatio":13}
+  ]
+}

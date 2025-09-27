@@ -1,0 +1,18 @@
+{
+  "trends": {
+    "Hilsa|Bay of Bengal": [
+      {"month":1,"value":120},{"month":2,"value":110},{"month":3,"value":130},{"month":4,"value":140},{"month":5,"value":135},{"month":6,"value":100},{"month":7,"value":90},{"month":8,"value":95},{"month":9,"value":120},{"month":10,"value":125},{"month":11,"value":140},{"month":12,"value":150}
+    ],
+    "Sardine|Arabian Sea": [
+      {"month":1,"value":200},{"month":2,"value":210},{"month":3,"value":220},{"month":4,"value":205},{"month":5,"value":190},{"month":6,"value":170},{"month":7,"value":160},{"month":8,"value":180},{"month":9,"value":195},{"month":10,"value":210},{"month":11,"value":220},{"month":12,"value":230}
+    ],
+    "Tuna|Indian Ocean": [
+      {"month":1,"value":95},{"month":2,"value":100},{"month":3,"value":105},{"month":4,"value":110},{"month":5,"value":108},{"month":6,"value":120},{"month":7,"value":130},{"month":8,"value":128},{"month":9,"value":125},{"month":10,"value":120},{"month":11,"value":118},{"month":12,"value":115}
+    ]
+  },
+  "speciesBreakdown": {
+    "Bay of Bengal": [["Hilsa",45],["Sardine",20],["Tuna",15],["Mackerel",20]],
+    "Arabian Sea": [["Sardine",42],["Mackerel",25],["Tuna",18],["Hilsa",15]],
+    "Indian Ocean": [["Tuna",40],["Mackerel",30],["Sardine",20],["Hilsa",10]]
+  }
+}
