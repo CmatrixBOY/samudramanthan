@@ -17,6 +17,9 @@ export default function Dashboard() {
   const { pathname } = useLocation();
   const [species, setSpecies] = useState('Hilsa');
   const [region, setRegion] = useState('Bay of Bengal');
+  const [startMonth, setStartMonth] = useState(1);
+  const [endMonth, setEndMonth] = useState(12);
+  const [weatherParam, setWeatherParam] = useState('sst');
 
   return (
     <div className="space-y-4">
@@ -30,7 +33,7 @@ export default function Dashboard() {
         <CardHeader>
           <CardTitle>Filters</CardTitle>
         </CardHeader>
-        <div className="grid gap-3 p-6 pt-0 sm:grid-cols-3">
+        <div className="grid gap-3 p-6 pt-0 sm:grid-cols-5">
           <div>
             <label className="mb-1 block text-sm">Fish species</label>
             <select className="h-10 w-full rounded-md border border-input bg-transparent px-3 text-sm" value={species} onChange={e=>setSpecies(e.target.value)}>
@@ -44,13 +47,27 @@ export default function Dashboard() {
             </select>
           </div>
           <div>
-            <label className="mb-1 block text-sm">Season</label>
-            <Input placeholder="e.g., Monsoon 2024" />
+            <label className="mb-1 block text-sm">Start Month</label>
+            <select className="h-10 w-full rounded-md border border-input bg-transparent px-3 text-sm" value={startMonth} onChange={e=>setStartMonth(Number(e.target.value))}>
+              {MONTHS.map((m,i)=> <option key={m} value={i+1}>{m}</option>)}
+            </select>
+          </div>
+          <div>
+            <label className="mb-1 block text-sm">End Month</label>
+            <select className="h-10 w-full rounded-md border border-input bg-transparent px-3 text-sm" value={endMonth} onChange={e=>setEndMonth(Number(e.target.value))}>
+              {MONTHS.map((m,i)=> <option key={m} value={i+1}>{m}</option>)}
+            </select>
+          </div>
+          <div>
+            <label className="mb-1 block text-sm">Weather parameter</label>
+            <select className="h-10 w-full rounded-md border border-input bg-transparent px-3 text-sm" value={weatherParam} onChange={e=>setWeatherParam(e.target.value)}>
+              {WEATHER.map(w=> <option key={w.key} value={w.key}>{w.label}</option>)}
+            </select>
           </div>
         </div>
       </Card>
 
-      <Outlet context={{ species, region }} />
+      <Outlet context={{ species, region, startMonth, endMonth, weatherParam }} />
     </div>
   );
 }
